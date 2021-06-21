@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Fraunces:wght@700&display=swap');
+
+.flex-items-reverse  {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-items .row {
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    /* margin-bottom: 1rem; */
+}
+
+.flex-items.flex-items-reverse .row {
+    flex-direction: row-reverse;
+}
+
+ .flex-items .column {
+    display: flex;
+    /* flex:1; */
+    /* flex-basis: 100%; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* padding: 2rem 0; */
+}
+
+.article {
+    margin: 2rem 0;
+}
+
+.article-img {
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.column .article-header, .article-content {
+    padding: 0 6rem;
+}
+
+.article-header {
+    font-family: 'Fraunces';
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom:2rem;
+    color: hsl(212, 27%, 19%);
+    line-height: 1.2;
+}
+
+.article-content {
+    color:hsl(232, 10%, 55%);
+    margin-bottom: 2rem;
+    letter-spacing: 1.5px;
+}
+
+.article-btn {
+    text-align: center;
+ }
+
+.btn-primary {
+    padding: 0.4rem 0.8rem;
+    background: none;
+    border: 1px solid black;
+    font-family: 'Fraunces';
+    text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
+    /* margin-bottom: 1rem; */
+}
+
+.btn-primary:hover {
+    /* opacity: 0.7; */
+    background-color: #233;
+    color: #fff;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.flex-team {
+    display: flex;
+    padding: 4rem 2rem;
+    /* margin-bottom: 3rem; */
+}
+
+.flex-member {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.avatar-img {
+    border-radius: 50%;
+    margin-bottom: 2.5rem;
+}
+
+.flex-member-info {
+    color: hsl(232, 10%, 55%);
+    margin-bottom: 1.5rem;
+
+}
+
+.flex-member-name {
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces';
+}
+
+.flex-member-position {
+    color: hsl(210, 4%, 67%);
+    margin-bottom: 2rem;
+}
+
+.flex-images .flex-img-row {
+    display: flex;
+    width:100%;
+}
+
+.flex-img img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+

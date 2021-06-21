@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Fraunces:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* box-sizing: border-box; */
+    font-family: 'Barlow';
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.header {
+    background: url('../images/desktop/image-header.jpg') no-repeat center center/cover;
+    height: 80vh;
+    width: 100%;
+    color: #fff;
+    /* padding: 1rem 2rem; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-brand {
+    font-weight: bolder;
+    font-weight: 700;
+    padding: 1rem 2rem;
+}
+
+.nav-pills {
+    display: flex;
+    font-size: 14px;
+    padding: 2rem;
+}
+
+.nav-pill {
+    margin-left:2rem;
+    padding: 0.4rem 0.8rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-pill:hover {
+    border-radius: 1rem;
+    background-color: #fff;
+    color:#000;
+   
+    font-family: 'Fraunces';
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+}
+
+.main-header {
+    margin-top: 8%;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.arrow-img {
+    display: block;
+    margin: auto;
+    /* width: 50% */
+    /* text-align: center; */
+}
+
+.graphic-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: url('../images/desktop/image-graphic-design.jpg') no-repeat center center/cover;
+    height: 40rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.graphic-design-header {
+    font-size: 2rem;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    color: hsl(167, 40%, 24%);
+    text-align: center;
+}
+
+.graphic-design-content {
+    color: hsl(167, 40%, 24%);
+    text-align: center;
+    margin: 2rem 4rem;
+} 
+.photography-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: url('../images/desktop/image-photography.jpg') no-repeat center center/cover;
+    height: 40rem;
+    width:100%;
+    object-fit: cover;
+} 
+
+.photography-header {
+    font-size: 2rem;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    color: hsl(198, 62%, 26%);
+    text-align: center;
+}
+
+.photography-content {
+    color: hsl(198, 62%, 26%);
+    text-align: center;
+    margin: 2rem 4rem;
+}
+
+.team-header {
+    margin: 4rem 2rem 0 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Fraunces';
+    color: hsl(210, 4%, 67%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 4%, 67%);
+    color: hsl(213, 9%, 39%);
+}
+
+.main-footer {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.footer-nav-pills {
+    margin:  1rem;
+    color: hsl(232, 10%, 55%);
+}
+
+.footer-nav-pills:hover {
+    opacity: 0.65;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+}
+
+.footer-icons {
+    display: flex;
+}
+
+.footer-icon {
+    margin: 1rem;
+}
+
+.footer-icon:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+}
+
+.links {
+    height: 0;
+    overflow:hidden;
+    transition: all 300ms linear;
+}
+
+@media(min-width: 769px) {
+    .nav-toggle {
+        display: none;
+    }
+}
+
+@media screen and  (max-width: 769px ) {
+    
+    .nav-pills {
+        display: none;
+    }
+    
+    .links {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .links li {
+        color:#fff;
+        list-style-type: none;
+        padding: 0.5rem 1rem;
+        border-bottom: 2px solid #fff;
+    }
+
+    .nav-pill:hover {
+        background: none;
+        border:none;
+        color: #000; 
+    }
+
+    .show-links {
+        height: 12rem;
+    }
+
+    .nav-toggle {
+        font-size: 1.5rem;
+        background: transparent;
+        border-color: transparent;
+        cursor: pointer;
+        padding:  2rem;
+        transition-delay: 500ms;
+      }
+    
+
+    .nav-pill {
+        margin: 0;
+    }
+
+    .flex-items .row {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+    .article {
+        width: 100%;
+    }
+
+
+    .flex-items .column {
+        width: 100%
+    }
+
+    .flex-team {
+        flex-direction: column;
+    }
+
+    .flex-img-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flex-img-row .flex-img {
+        width: 50%;
+    }
+
+
+
+
+}
