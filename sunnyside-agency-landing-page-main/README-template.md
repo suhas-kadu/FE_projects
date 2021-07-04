@@ -31,12 +31,12 @@ Users should be able to:
 
 ![Desktop UI 1](./screenshots/ss01.png)
 ![Desktop UI 2](./screenshots/ss02.png)
-![Mobile UI](./screenshots/output_gif.gif)
+<div align="center"><img src="./screenshots/output_gif.gif"  /></div>
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Check out](https://fe-projects.vercel.app/)
 
 ## My process
 
@@ -57,7 +57,7 @@ In future i would focusing on positioning of elements using z-index, adding new 
 
 ### Useful resources
 
-- [w3schools](https://www.example.com) - This helped me flex box.
+- [w3schools](https://www.example.com) - This helped me for flex box.
 
 ## Author
 
