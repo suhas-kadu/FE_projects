@@ -61,7 +61,7 @@ In future i would focusing on positioning of elements using z-index, adding new 
 
 ## Author
 
-- Website - [Suhas Kadu](https://twitter.com/suhaskadu_99/)
+- Website - [Suhas Kadu](https://suhaskaduportolio.netlify.app/)
 - Frontend Mentor - [@suhas-kadu](https://www.frontendmentor.io/profile/suhas-kadu)
 - Twitter - [@suhaskadu_99](https://twitter.com/suhaskadu_99/)
 
