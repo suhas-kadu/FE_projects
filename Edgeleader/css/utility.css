@@ -1,0 +1,136 @@
+/* text styles */
+.text-primary {
+    color: green;
+    font-weight: 400;
+}
+
+.text-secondary {
+    color: #e0f;
+    font-weight: 300;
+}
+
+.btn {
+    background-color: #28a728;
+    cursor: pointer;
+    padding: 0.4rem 1.5rem;
+    font-size: medium;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-primary , .bg-primary {
+    background-color: #28a728;
+    color: #fff;
+}
+
+.btn-secondary, .bg-secondary {
+    background-color: #0284d0;
+    color: #fff;
+}
+
+.btn-dark, .bg-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-light, .bg-light {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.flex-columns .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex-columns img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.flex-columns .column .column-1, .flex-columns .column .column-2 {
+    height: 100%;
+}
+
+.flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.flex-columns h2 {
+    font-size: xx-large;
+    font-weight: 100;
+}
+
+.flex-columns h4 {
+    margin-bottom: 0.5rem;
+}
+
+.flex-columns p {
+    margin: 1.2rem 0;
+}
+
+/* flex-grid */
+.section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1.5rem;
+}
+
+.section-header h2 {
+    margin: 0.5rem 0;
+}
+
+.flex-grid .row {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    padding: 0 1rem 1.5rem 1rem;
+}
+
+.flex-grid .column {
+    display: flex;
+    flex-direction: column;
+    flex: 25%;
+    max-width: 25%;
+    padding:0 0.5rem;
+}
+
+.flex-grid img {
+    padding:0.5rem 0;
+}
+
+/* flex - reverse */
+.flex-columns.flex-reverse .row {
+    flex-direction: row-reverse;
+}
+

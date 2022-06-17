@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    /* margin-left: 0.5rem; */
+    color: #eee;
+    padding: 0.5rem;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.navbar{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    opacity: 0.8;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+}
+
+.navbar.top {
+    background: transparent;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+}
+
+.nav__pills a {
+    text-decoration: none;
+    color: #eee;
+    margin: 0 0.5rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.nav__pills a:hover {
+    text-decoration: none;
+    color: #eee;
+    margin: 0 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border-bottom: 3px solid #e00;
+}
+
+.hero {
+    background: url(../images/home/showcase.jpg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #eee;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    height: 100%;
+    color: #fff;
+    /* font-weight: 400; */
+    font-size: x-large;
+    padding: 0 0.5rem;
+}
+
+.content h1,h2 {
+    /* font-weight: 400; */
+    line-height: 1.2;
+    text-align: center;
+}
+
+.content p {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+/* adding overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* adding z-index */
+.hero * {
+    z-index: 12;
+}
+
+/* icons */
+.icons {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-icon {
+    margin: 1rem;
+    /* font-weight: 300; */
+}
+
+.flex-icon {
+    background-color: #28a728;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.flex-grid img {
+transition: transform 0.4s;
+}
+
+.flex-grid img:hover {
+    transform: scale(1.05);
+}
+
+.team img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.callback-form {
+    width: 100%;
+    padding: 0.2rem;
+}
+
+.form-item {
+    margin: 0.4rem 0;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-item input {
+    width: 100%;
+    padding: 0.2rem 0.4rem;
+    height: 2.5rem;
+}
+
+.form-item input:focus {
+    outline-color: #28a728;
+}
+
+.callback-form .btn {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+/* blog */
+.blog {
+    background: url('../images/home/blog.jpg') no-repeat center center/cover;
+    height: 30vh;
+}
+
+/* Post */
+.meta {
+    padding: 3rem 2rem;
+}
+
+.post-header {
+    font-size: 2.5rem;
+    font-weight: normal;
+    /* padding: 2.5rem 2rem; */
+}
+
+.author {
+    margin-bottom: 1rem;
+}
+
+.meta img {
+    width: 60%;
+    height: 30rem;
+    display: block;
+    margin: 2rem auto;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:1rem 0.2rem;
+}
+
+.social {
+    margin-bottom: 1rem;
+}
+
+.footer-icon {
+    margin: 0 0.8rem;
+    color: #fff;
+}
+
+.footer-icon:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+
+@media (max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding:20px;
+        width: 100vw;
+        left: 0;
+        right: 0;
+    }   
+
+    .nav__pills a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+
+    .icons {
+        flex-direction: column;
+    }
+
+    .flex-columns .column, .flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .icons .section-icon img {
+        width: 70%;
+    }
+    
+    
+
+}
+
+@media(max-width: 768px) and (min-width: 501px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding:20px;
+        width: 100vw;
+        left: 0;
+        right: 0;
+    }   
+
+    .nav__pills a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+
+    .icons {
+        flex-direction: column;
+    }
+
+    .flex-columns .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .flex-grid .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+   
+}
